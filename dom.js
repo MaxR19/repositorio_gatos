@@ -37,9 +37,19 @@ img[0].style.borderRadius = "1rem";
 img[0].style.height = "300px";
 
 let h3 = document.getElementsByTagName("h3");
-h3[0].style.fontStyle = "italic";
-h3[1].style.fontStyle = "italic";
+console.log("h3", h3);
+h3[0].style.border = "black";
 
 let li = document.getElementsByTagName("li");
 li[3].style.color = "crimson";
 li[5].style.color = "crimson";
+
+let nuevoH1 = document.createElement("h1");
+
+console.log ("Mi nuevo h1: ", nuevoH1);
+
+nuevoH1.innerHTML = "Nuevo H1 desde javascript";
+
+console.log ("Mi nuevo h1 con contenido: ", nuevoH1);
+
+mainHeader.appendChild(nuevoH1);
