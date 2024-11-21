@@ -4,22 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
+    <style>
+        /*elemento con el identificador quitarle margenes y padding y darle un color de fondo claro
+        elemento con la clase listaTareas quitarle el estilo de la lista
+        elemento con la clase tarea centrar el texto y darle color de texto blanco. */
+    #contenidoPrincipal{
+        margin: 0%;
+        padding: 0%;
+        background-color: aquamarine;
+    }
+    .listaTareas{
+        list-style-type: none;
+    }
+    .tarea{
+        text-align: center;
+        color: white;
+    }
+    </style>
     <!-- ENLAZAR FICHERO CSS -->
     <title>Alexandru Cristian Cucuruzeanu</title>
   </head>
   <body>
     <header>
-      <h1>Enlazando hojas de estilos</h1>
+      <h1 id="titulo">Enlazando hojas de estilos</h1>
     </header>
-    <main>
-      <ul>
-        <li>Generar un fichero style.css</li>
-        <li>Utilizar correctamente la etiqueta link</li>
-        <li>Aplicar reglas de estilo</li>
+    <main id="contenidoPrincipal">
+      <ul class="listaTareas" >
+        <li class="tarea">Generar un fichero style.css</li>
+        <li class="tarea">Utilizar correctamente la etiqueta link</li>
+        <li class="tarea">Aplicar reglas de estilo</li>
       </ul>
     </main>
+    <script>
+          //seleccionar el elemento con identificador título y borrarlo
+    let id = document.getElementById("titulo");
+    id.remove();
+    </script>
   </body>
 </html>
