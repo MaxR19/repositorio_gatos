@@ -1,0 +1,75 @@
+/* Fondo gris claro y fuente arial al body */
+body {
+    background-color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Centrar el texto del h1 */
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Para el botón, añadirle un color de fondo llamativo
+Texto Blanco y bordes redondeados */
+button#agregarTarea {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 15px;
+
+    padding: 10px;
+    font-size: 1.25rem;
+    width: 95vw;
+    margin: 1.75vw;
+    border: none;
+    cursor: pointer;
+}
+
+.tarea {
+    /*
+    - Texto centrado
+    - argin y padding 10 px
+    - bordes redondeados
+    - borde gris de 1 pixel de estilo
+    - color de fondo
+    */
+    
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: cyan;
+
+    /*Aquí hemos añadidod la regla dentro d ela consola del navegador y hemos ido jugando. */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+/* .tarea:pasar el ratón por encima { */
+/* Cambiar el color de fondo y el tamaño de la fuente al pasar el reatón */
+/* .tarea:hover {
+    font-weight: bold;
+    background-color:rgb(143, 188, 190);
+} */
+
+button.eliminar {
+    background-color: crimson;
+}
+
+button.cambiarColor {
+    background-color: greenyellow;
+}
+
+button.eliminar:hover {
+    background-color: rgb(137, 119, 119);
+}
+
+button.cambiarColor:hover {
+    background-color: aquamarine;
+}
