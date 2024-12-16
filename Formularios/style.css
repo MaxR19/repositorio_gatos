@@ -15,11 +15,11 @@ body {
     align-items: center;
 }
 
-input, textarea {
+input, textarea, select {
     margin: 15px 10px;
 }
 
-button {
+button, input[type="button"] {
     padding: 10px;
     border-radius: 15px;
     width: 10%;

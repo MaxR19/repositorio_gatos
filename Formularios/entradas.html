@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulario de entradas</title>
+    </head>
+    <body>
+        <!--
+            - Nombre
+            - Correo
+            - Cantidad de entradas
+            - Fecha del evento
+            - Aceptar los términos y condiciones
+            - Botón enviar
+        -->
+
+        <form id="intro_form" action="sent.html" method="post" name="initial"> <!-- método post para información más sensible -->
+            <label for="name">Nombre: </label>
+            <input id="name" type="text" placeholder="Introduce tu nombre: ">
+            
+            <label for="email">Email: </label>
+            <input id="email" type="email" placeholder="Introduce tu dirección de correo: ">
+
+            <label for="numero_entradas">Número de entradas: </label>
+            <input id="numero_entradas" type="number" min="1" max="10" placeholder="Introduce el número de entradas deseadas">
+
+            <label for="fecha">Fecha del evento: </label>
+            <input id="fecha" type="date">
+
+            <label for="tipoEntrada">Monster favorito</label>
+            <select id="tipoEntrada" name="tipoEntrada">
+                <option value="sinNumerar">Entrada sin numerar</option>
+                <option value="asientoReservado">Asiento reservado</option>
+                <option value="VIP">VIP</option>
+            </select>
+
+            <label for="politicas">Aceptar políticas de privacidad</label>
+            <input id="politicas" type="checkbox" checked="checked">
+
+            <!-- Otra manera de representarlo
+            <label>
+                Aceptar los términos y condiciones: <input type="checkbox" checked="checked">
+            </label>
+                -->
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

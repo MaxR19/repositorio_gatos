@@ -7,7 +7,7 @@
         <title>Formularios</title>
     </head>
     <body>
-        <form id="intro_form" action="sent.html" method="GET" name="test"> <!-- método post para información más sensible -->
+        <form id="intro_form" action="sent.html" method="get" name="test"> <!-- método post para información más sensible -->
             <label for="user_name"> Nombre: </label>
             <input id="user_name" maxlength="50" type="text" placeholder="Introduce tu nombre">
 
@@ -32,8 +32,26 @@
             <label for="fecha">Fecha: </label>
             <input id="fecha" type="date">
 
-            <label for="hora">Fecha: </label>
+            <label for="hora">Hora: </label>
             <input id="hora" type="time" min="08:30" max="15:00">
+
+            <input type="button" value="Enviar desde input">
+
+            <label for="politicas">Aceptar políticas de privacidad</label>
+            <input id="politicas" type="checkbox" checked="checked">
+
+            <label>Rango de edad: </label>
+            18 - 24
+            <input type="radio" value="18-24" name="age_range">
+            25 - 34
+            <input type="radio" value="25-34" name="age_range">
+
+            <label for="opciones">Monster favorito</label>
+            <select id="opciones" name="opciones">
+                <option value="mangoLoco">Mango Loco</option>
+                <option value="ultraWhite">Ultra White</option>
+                <option value="juiced">Juiced</option>
+            </select>
 
             <button type="submit">Enviar</button>
         </form>
