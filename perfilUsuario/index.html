@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario: Crea tu Perfil</h1>
+    </header>
+    <main>
+        <form id="profile_form">
+            <label for="nombre"> Nombre completo: </label>
+            <input id="nombre" maxlength="50" type="text" placeholder="Introduce tu nombre">
+            
+            
+            <label for="edad">Edad: </label>
+            <input id="edad" type="number" min="5" max="105" step="5">
+            
+            
+            <label for="descripcion">Descripción personal: </label>
+            <textarea id="descripcion" minlength="15" maxlength="250" placeholder="Comentarios"></textarea>
+    
+            <fieldset>
+                <legend>Género:</legend>
+                
+                <!--<label>Género: </label>-->
+                <label for="Hombre">Hombre</label>
+                <input type="radio" id="Hombre" name="genero">
+                <label for="Mujer">Mujer</label>
+                <input type="radio" id="Mujer" name="genero">
+                <label for="Otro">Otro</label>
+                <input type="radio" id="Otro" name="genero">
+                
+            </fieldset>
+    
+            <fieldset>
+                <legend>Intereses:</legend>
+                
+                <!--<label for="intereses">Intereses: </label>
+                <select id="intereses" name="intereses">
+                    <option value="Programacion">Programación</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Musica">Música</option>
+                </select> -->
+
+                <!--<label for="Programacion">Programación<input id="Programacion" name="Programacion" type="checkbox"></label>
+                <label for="Deportes">Deportes<input id="Deportes" name="Deportes" type="checkbox"></label>
+                <label for="Musica">Música<input id="Musica" name="Musica" type="checkbox"></label>-->
+
+                <label for="Programacion">Programación</label>
+                <input id="Programacion" name="Programacion" type="checkbox">
+                <label for="Deportes">Deportes</label>
+                <input id="Deportes" name="Deportes" type="checkbox">
+                <label for="Musica">Música</label>
+                <input id="Musica" name="Musica" type="checkbox">
+
+            </fieldset>
+    
+            <button type="button" id="create_profile">Crear Perfil</button>
+        </form>
+    
+        <h2>Vista previa del perfil</h2>
+        <div id="profile_preview"></div>
+    </main>
+    <footer>
+        <h3>Prometeo DAW 2024 ®</h3>
+    </footer>
+</body>
+</html>
