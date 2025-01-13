@@ -8,6 +8,58 @@
 </head>
 <body>
     <header>
-        
+        <h1>Repaso Inicial Formularios</h1>
     </header>
+    <main>
+        <form id="intro_form" action="sent.html" method="get" name="test"> <!-- método post para información más sensible -->
+            <label for="user_name"> Nombre: </label>
+            <input id="user_name" maxlength="50" type="text" placeholder="Introduce tu nombre">
+
+            <label for="user_email">Email: </label>
+            <input id="user_email" type="email" placeholder="user@email.com">
+
+            <fieldset>
+                <legend id="satisfaccion">Satisfacción:</legend>
+                
+                <label for="muy_satisfecho">Muy Satisfecho</label>
+                <input type="radio" id="muy_satisfecho" name="satisfaccion" value="muy_satisfecho">
+                
+                <label for="satisfecho">Satisfecho</label>
+                <input type="radio" id="satisfecho" name="satisfaccion" value="satisfecho">
+
+                <label for="neutral">Neutral</label>
+                <input type="radio" id="neutral" name="satisfaccion" value="neutral"> 
+                
+                <label for="insatisfecho">Insatisfecho</label>
+                <input type="radio" id="insatisfecho" name="satisfaccion" value="insatisfecho">
+
+                <label for="muy_insatisfecho">Muy insatisfecho</label>
+                <input type="radio" id="muy_insatisfecho" name="satisfaccion" value="muy_insatisfecho"> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Intereses:</legend>
+
+                <label for="deporte">Deporte</label>
+                <input type="checkbox" id="deporte" value="deporte">
+
+                <label for="tecnologia">Tecnología</label>
+                <input type="checkbox" id="tecnologia" value="tecnologia">
+                
+                <label for="arte">Arte</label>
+                <input type="checkbox" id="arte" value="arte">
+
+                <label for="musica">Música</label>
+                <input type="checkbox" id="musica" value="musica">
+            </fieldset>
+
+            <label for="comments">Comentarios: </label>
+            <textarea id="comments" minlength="15" maxlength="250" placeholder="Comentarios"></textarea> <!--Crea por defecto visualmente un pequeño campo en el que podemos introducir unos comentarios -->
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <h3>Prometeo DAW 2025</h3>
+    </footer>
 </body>
