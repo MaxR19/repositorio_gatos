@@ -10,6 +10,7 @@ crearPerfil.onclick = function () {
     let nombreCompleto = document.getElementById("nombre").value;
     let edad = document.getElementById("edad").value;
     let descripcion = document.getElementById("descripcion").value;
+    let genero = document.getElementById("genero").value; // da un undefined en la vista previa
 
     console.log("Nombre completo: ", nombreCompleto);
     console.log("Edad: ", edad);
@@ -21,7 +22,8 @@ crearPerfil.onclick = function () {
         <h3>Nombre: ${nombreCompleto}, ${edad} años</h3>
         <p>Descripcion personal: </p>
         <p>${descripcion}</p>
+        <p>${genero}</p>
     `;
 
-    contenido.style.display = "block";
+    contenido.style.display = "block"; // Al estar activado el display en el css con el valor none es necesario modificarlo en el js.
 }
