@@ -11,15 +11,15 @@
         <h1>Repaso Inicial Formularios</h1>
     </header>
     <main>
-        <form id="intro_form" action="sent.html" method="get" name="test"> <!-- método post para información más sensible -->
+        <form id="intro_form" method="get" name="test"> <!-- método post para información más sensible -->
             <label for="user_name"> Nombre: </label>
-            <input id="user_name" maxlength="50" type="text" placeholder="Introduce tu nombre">
+            <input id="user_name" maxlength="50" type="text" placeholder="Introduce tu nombre" required>
 
             <label for="user_email">Email: </label>
-            <input id="user_email" type="email" placeholder="user@email.com">
+            <input id="user_email" type="email" placeholder="user@email.com" required>
 
             <fieldset>
-                <legend id="satisfaccion">Satisfacción:</legend>
+                <legend id="satisfaccion">Nivel de satisfacción:</legend>
                 
                 <label for="muy_satisfecho">Muy Satisfecho</label>
                 <input type="radio" id="muy_satisfecho" name="satisfaccion" value="muy_satisfecho">
@@ -63,3 +63,4 @@
         <h3>Prometeo DAW 2025</h3>
     </footer>
 </body>
+</html>
