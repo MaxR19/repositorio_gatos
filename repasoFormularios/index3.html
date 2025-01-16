@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pedido DAW-Eat</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Solicitud de pedidos</legend>
+
+                <label for="name">Nombre:</label>
+                <input id="name" maxlength="50" type="text" placeholder="Introduce tu nombre" required>
+
+                <label for="direccion">Dirección:</label>
+                <input id="direccion" type="text" maxlength="100" placeholder="Introduce tu dirección" required>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" maxlength="250" placeholder="Introduce tu correo electrónico" required>
+
+                <p>Selección del menú principal</p>
+                <label class="labelRadio"><input type="radio" name="menu_principal" value="pizza">Pizza</label>
+                <label class="labelRadio"><input type="radio" name="menu_principal" value="pasta">Pasta</label>
+                <label class="labelRadio"><input type="radio" name="menu_principal" value="ensalada">Ensalada</label>
+                <label class="labelRadio"><input type="radio" name="menu_principal" value="hamburguesa">Hamburguesa</label>
+                <label class="labelRadio"><input type="radio" name="menu_principal" value="pollo asado">Pollo asado</label>
+
+                <p>Selección de extras</p>
+                <label class="labelRadio"><input type="checkbox" name="extras" value="bebida">Bebida</label>
+                <label class="labelRadio"><input type="checkbox" name="extras" value="postre">Postre</label>
+                <label class="labelRadio"><input type="checkbox" name="extras" value="pan">Pan</label>
+                <label class="labelRadio"><input type="checkbox" name="extras" value="salsa">Salsa</label>
+
+                <label for="numero_menus">Número de menús:</label>
+                <input type="number" id="numero_menus" min="1" max="10" required>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

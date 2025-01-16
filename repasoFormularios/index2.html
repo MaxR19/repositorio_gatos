@@ -20,7 +20,7 @@
                 <input id="user_name" maxlength="50" type="text" placeholder="Introduce tu nombre" required>
 
                 <label for="fecha_entrada">Fecha de entrada:</label>
-                <input id="fecha_entrada" type="date" required>
+                <input id="fecha_entrada" type="date" min="2025-04-30" max="2025-06-30" required>
                 
                 <label for="fecha_salida">Fecha de salida:</label>
                 <input id="fecha_salida" type="date">
@@ -33,13 +33,14 @@
                     </select>
                 </label>
 
-                <label for="edad">Número de huéspedes:</label>
-                <input type="number" id="edad" min=1 max="10" required>
+                <label for="huespedes">Número de huéspedes:</label>
+                <input type="number" id="huespedes" min="1" max="10" required>
 
-                <label for="politicas">Aceptar los términos y condiciones</label>
-                <input id="politicas" type="checkbox" checked="checked">
+                <label class="inlineLabel">Acepto los términos y condiciones
+                <input id="politicas" type="checkbox" required>
+                </label>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Reservar</button>
             </fieldset>
         </form>
     </main>
