@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Nuevo XML con el elemento padre catalogo:
+    El catálogo contendrá productos (al menos 5) con la siguiente información:
+        - nombre
+        - precio
+        - descripcion
+        - categoria (como atributo)
+        - disponible (como atributo)
+    *Incluye comentarios para cada sección
+    **Podéis utilizar <<![CDATA[]> dentro de las etiquetas por si quereis escapar algún dato
+-->
+
+<!-- Alternativa para validar nuestros XMLs -->
+
+<!-- <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:element name="producto">
+            <xs:attribute name="categoria" type="xs:string" use="required"></xs:attribute>
+            <xs:attribute name="disponible" type="xs:string"></xs:attribute>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="precio" type="xs:string"/>
+                        <xs:element name="descripcion" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> -->
+
+<!DOCTYPE catalogo[
+    <!ELEMENT catalogo (producto+)>
+    <!ELEMENT producto (nombre, precio, descripcion)>
+    <!ATTLIST producto categoria CDATA #REQUIRED>
+    <!ATTLIST producto disponible CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+]>
+
+<catalogo>
+    <!-- xmlns="http://w3schools.com"
+    xmlns:xsi="https://w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="./catalogo_schema.xml" -->
+    
+    <producto categoria="comidaBasura" disponible="N">
+        <nombre>Bolsa de patatas Fritas Lay's</nombre>
+        <precio>1.50</precio>
+        <descripcion>Bolsa de patatas Fritas Lay's 265g</descripcion>
+    </producto>
+
+    <producto categoria="comidaBasura" disponible="S">
+        <nombre>Coca Cola 2L</nombre>
+        <precio>2.50</precio>
+        <descripcion>Botella de 2 litros de la marca Coca-Cola</descripcion>
+    </producto>
+
+    <producto categoria="mascotas" disponible="S">
+        <nombre>Snacks para perro</nombre>
+        <precio>4.40</precio>
+        <descripcion>Pack de 24 barras para los dientes de los perros</descripcion>
+    </producto>
+
+    <producto categoria="alimentacion" disponible="N">
+        <nombre>Aceite de oliva</nombre>
+        <precio>6.70</precio>
+        <descripcion>Aceite de oliva virgen extra 3L</descripcion>
+    </producto>
+
+    <producto categoria="regalo" disponible="N">
+        <nombre>Caja de bombones</nombre>
+        <precio>8.50</precio>
+        <descripcion>Caja de 24 bombones de diferentes tipos de chocolate</descripcion>
+    </producto>
+
+</catalogo>

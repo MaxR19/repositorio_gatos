@@ -16,14 +16,50 @@ crearPerfil.onclick = function () {
     console.log("Edad: ", edad);
     console.log("Descripcion: ", descripcion);
 
+    // let pattern = new RegExp("[0,9]","g")
+
     let contenido = document.getElementById("profile_preview");
+
+    let isNanNombre = isNaN(Number(nombreCompleto));
+
+    // let contieneNumero = nombreCompleto.search(pattern);
+
+    for (let index = 0; index < nombreCompleto.length; index++) {
+        if (!isNaN(nombreCompleto[index])) alert("Cuidado.")
+    }
     
-    contenido.innerHTML = `
+    // Añadir comprobación para informar al usuario que no puede introducir un nombre vacío.
+
+    if (nombreCompleto === "") {
+        alert ("El campo nombre no puede estar vacío.");
+    }
+    
+    else if (!(isNanNombre)) { // Si solo se introduce números salta el alert.
+        alert ("El campo nombre no puede contener números.");
+    }
+
+    /* else if (contieneNumero !== -1) {
+        alert ("El campo nombre no puede contener números.");
+    } */
+    
+    else if (edad === "") {
+        alert ("El campo edad no puede estar vacío.");
+    }
+
+    else if (descripcion === "") {
+        alert ("El campo descripción no puede estar vacío.");
+    }
+
+    else {    
+        contenido.innerHTML = `
         <h3>Nombre: ${nombreCompleto}, ${edad} años</h3>
         <p>Descripcion personal: </p>
         <p>${descripcion}</p>
         <p>${genero}</p>
-    `;
+        `;
 
-    contenido.style.display = "block"; // Al estar activado el display en el css con el valor none es necesario modificarlo en el js.
+        contenido.style.display = "block"; // Al estar activado el display en el css con el valor none es necesario modificarlo en el js.
+    }
+
 }
+

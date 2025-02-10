@@ -22,11 +22,35 @@ function agregarTareas() {
         let mensaje = "¡El nombre de la tarea no puede estar vacío!";
         textoMensaje.textContent = mensaje;
 
-        elementoMensaje.appendChild(textoMensaje);
+        // 16.01.2025 1.0
+        let hijosMensaje = elementoMensaje.children;
+
+        // console.log("Hijos elementoMensaje: ", elementoMensaje.children);
+
+        //Comprobar que no tengamos un elemento ya con el mismo texto para no crear duplicidades en el recuadro del mensaje
+        if (hijosMensaje.length !== 0) {
+
+            for (let index = 0; index < hijosMensaje.length; index++) {
+                if (textoMensaje.textContent != hijosMensaje[index].textContent) {
+                    elementoMensaje.appendChild(textoMensaje);
+                }
+            }
+
+        } else {
+    
+            elementoMensaje.appendChild(textoMensaje);
+        }
+
+        // Fin 1.0
 
         // Si no está vacía, realizar todos los pasos de la función
     } else {
+
+        elementoMensaje.style.display = "none";  // Solamente oculta el mensaje de let mensaje  //16.01.2024 Fin 2.0
+
         tarea.textContent = textoTarea;
+
+        
 
         //Añadir una clase llamada "tarea"
         tarea.className = "tarea";
@@ -62,11 +86,32 @@ function agregarTareas() {
         // ** Los append child siempre recomendado al final de nuestra función
         tarea.appendChild(botonEliminar);
         tarea.appendChild(botonCompletar);
+
+        // 16.01.2025 3.0
+        
+        // Comprobar que no tengamos una tarea ya con el mismo texto para no crear duplicidades en la lista de tareas.
+
+        let hijosListaTareas = listaTareas.children;
+
+        // console.log("Hijos hijosListaTareas: ", hijosListaTareas);
+
+        if (hijosListaTareas.length !== 0) {
+            // for (let index = 0; index < hijosListaTareas.length; index++) {
+                // if (tarea.innerHTML != hijosListaTareas[index]) {
+                if (!hijosListaTareas.includes(tarea)) {
+                    listaTareas.appendChild(tarea);
+                }
+            // }
+
+        } else {
+            listaTareas.appendChild(tarea);
+        }
+
+        // Fin 3.0
     
         //A la variable "listaTareas" añadir como elemento hijo la variable "tarea"
-        listaTareas.appendChild(tarea);
-        }
     }
+}
 
 // Seleccionar el elemento con id "agregarTarea"
 let agregarTarea = document.getElementById("agregarTarea");
@@ -97,4 +142,8 @@ function completarTarea (elementoBoton) {
 
     //Añadir la clase con el fondo verde al elemento padre del botón
     elementoPadre.classList.add("completada");
+}
+
+function vaciarTexto (elemento) {
+    elemento.textContent = "";
 }

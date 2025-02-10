@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Prólogo opcional, pero de gran uso-->
+
+<persona>
+<!--Mi primo Juan-->
+    <nombre longitud="30">Juan Perez</nombre> <!--Atributo de nombre-->
+    <![CDATA[ No quiero que se interprete como dato ]]>
+</persona>

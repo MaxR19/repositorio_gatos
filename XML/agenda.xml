@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Nuevo xml con el elemento agenda 
+que contenga contactos con: Nombre, Correo, Teléfono -->
+
+<!-- Modificad el doctype y las etiquetas 
+para incluir el atributo genero en los contactos -->
+
+<!-- Validación de estructura de nuestro XML -->
+<!DOCTYPE agenda[
+    <!ELEMENT agenda (contacto+)>
+    <!ELEMENT contacto (nombre, email, telefono)>
+    <!ATTLIST contacto genero CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ATTLIST telefono prefijo CDATA #REQUIRED>
+]>  
+
+<agenda>
+    <contacto genero="M">
+        <nombre>Juan Perez</nombre>
+        <email>juanperez@correo.com</email>
+        <telefono prefijo="+46">+34914533215</telefono>
+    </contacto>
+    
+    <contacto genero="M">
+        <nombre>Javier Hernández</nombre>
+        <email>javihernez@correo.com</email>
+        <telefono>+34654533214</telefono>
+    </contacto>
+    
+    <contacto genero="F">
+        <nombre>Emma Paredes</nombre>
+        <email>emmaparedes@correo.com</email>
+        <telefono prefijo="+46">+34644533215</telefono>
+    </contacto>
+</agenda>
