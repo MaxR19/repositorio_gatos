@@ -9,7 +9,7 @@
     <xsd:element name="configuracion_servidor">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="base_datos">
+                <xsd:element name="base_datos" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="usuario" type="xsd:string"></xsd:element>
@@ -18,7 +18,7 @@
                                 <xsd:simpleType>
                                     <xsd:restriction base="xsd:int">
                                         <xsd:minInclusive value="1024"></xsd:minInclusive>
-                                        <xsd:maxInclusive value="1024"></xsd:maxInclusive>
+                                        <xsd:maxInclusive value="65535"></xsd:maxInclusive>
                                     </xsd:restriction>
                                 </xsd:simpleType>
                             </xsd:element>
@@ -35,7 +35,7 @@
                         <xsd:attribute name="nombre" type="xsd:string"></xsd:attribute>
                     </xsd:complexType>
                 </xsd:element>
-                <xsd:element name="backups">
+                <xsd:element name="backups" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
                             <xsd:element name="ruta" type="xsd:string"></xsd:element>

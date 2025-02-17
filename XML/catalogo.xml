@@ -31,7 +31,7 @@
     </xs:element>
 </xs:schema> -->
 
-<!DOCTYPE catalogo[
+<!--<!DOCTYPE catalogo[
     <!ELEMENT catalogo (producto+)>
     <!ELEMENT producto (nombre, precio, descripcion)>
     <!ATTLIST producto categoria CDATA #REQUIRED>
@@ -39,9 +39,14 @@
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT precio (#PCDATA)>
     <!ELEMENT descripcion (#PCDATA)>
-]>
+]>-->
 
-<catalogo>
+
+
+<catalogo
+    xmlns:xsi="https://w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="catalogo_schema.xml"
+>
     <!-- xmlns="http://w3schools.com"
     xmlns:xsi="https://w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="./catalogo_schema.xml" -->

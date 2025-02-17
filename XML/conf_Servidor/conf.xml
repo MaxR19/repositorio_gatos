@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--    XML con la configuración del servidor
 configuracion_servidor:
 |_ base_datos
@@ -16,18 +17,30 @@ base_datos debe incluir:
     - ruta
     - frecuencia -->
 
-<configuracion_servidor>
+<configuracion_servidor
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="conf_schema.xsd"
+>
+
 <!-- Configuración para la base de datos de Max -->
     <base_datos nombre="BD_Max">
         <usuario>Max</usuario>
         <contrasena><![CDATA[admin]]></contrasena>
-        <puerto>8080</puerto>
+        <puerto>1000</puerto>
         <maximo_conexiones>5</maximo_conexiones>
-        <modo_acceso>remoto</modo_acceso>
+        <modo_acceso>remotos</modo_acceso>
+    </base_datos>
+
+    <base_datos nombre="BD_Max">
+        <usuario>Maxito</usuario>
+        <contrasena><![CDATA[adminis]]></contrasena>
+        <puerto>1001</puerto>
+        <maximo_conexiones>10</maximo_conexiones>
+        <modo_acceso>locales</modo_acceso>
     </base_datos>
 
     <backups>
-        <ruta>/var/log/backups</ruta>
-        <frecuencia>semanal</frecuencia>
+        <ruta>/var/backup</ruta>
+        <frecuencia>semanales</frecuencia>
     </backups>
 </configuracion_servidor>
