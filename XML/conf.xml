@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--    XML con la configuración del servidor
+configuracion_servidor:
+|_ base_datos
+|_ backups
+
+base_datos debe incluir:
+    - nombre de la base de base_datos (atributo)
+    - usuario
+    - contraseña
+    - puerto
+    - máximo de conexiones
+    - modo de acceso
+
+- seccion de backups que contenga a su vez:
+    - ruta
+    - frecuencia -->
+
+<configuracion_servidor>
+<!-- Configuración para la base de datos de Max -->
+    <base_datos nombre="BD_Max">
+        <usuario>Max</usuario>
+        <contrasena><![CDATA[admin]]></contrasena>
+        <puerto>8080</puerto>
+        <maximo_conexiones>5</maximo_conexiones>
+        <modo_acceso>remoto</modo_acceso>
+    </base_datos>
+
+    <backups>
+        <ruta>/var/log/backups</ruta>
+        <frecuencia>semanal</frecuencia>
+    </backups>
+</configuracion_servidor>

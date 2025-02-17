@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="main_mod.js" defer></script>
     <title>Perfil de Usuario</title>
 </head>
 <body>
@@ -14,57 +14,42 @@
     <main>
         <form id="profile_form">
             <label for="nombre">Nombre completo:</label>
-            <input type="text" id="nombre" maxlength="120" required>
-            
-            <!--<input type="text" id="nombre" maxlength="50" placeholder="Introduce tu nombre">-->
-            
+            <input id="nombre" type="text" maxlength="120" required>
+
+
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" max="120">
-            
-            <!--<input id="edad" type="number" min="5" max="105" step="5">-->
+            <input id="edad" type="number" max="120">   
             
             <label for="descripcion">Descripción personal:</label>
             <textarea id="descripcion" maxlength="250"></textarea>
-
-            <!--<textarea id="descripcion" minlength="15" maxlength="250" placeholder="Descripción personal:"></textarea>-->
+               
     
             <fieldset>
-
-                <legend id="genero">Género:</legend>
-                
+                <legend>Género:</legend>
                 <label for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="genero" value="hombre">
-                
+                <input id="hombre" type="radio" name="genero" value="hombre" required>
+
                 <label for="mujer">Mujer</label>
-                <input type="radio" id="mujer" name="genero" value="mujer">
-
+                <input id="mujer" type="radio" name="genero" value="mujer">
+                
                 <label for="otro">Otro</label>
-                <input type="radio" id="otro" name="genero" value="otro">    
-
+                <input id="otro" type="radio" name="genero" value="otro">                
+                
             </fieldset>
     
             <fieldset>
                 <legend>Intereses:</legend>
-                
-                <!--<label for="intereses">Intereses: </label>
-                <select id="intereses" name="intereses">
-                    <option value="Programacion">Programación</option>
-                    <option value="Deportes">Deportes</option>
-                    <option value="Musica">Música</option>
-                </select> -->
-
-                <!--<label for="Programacion">Programación<input id="Programacion" name="Programacion" type="checkbox"></label>
-                <label for="Deportes">Deportes<input id="Deportes" name="Deportes" type="checkbox"></label>
-                <label for="Musica">Música<input id="Musica" name="Musica" type="checkbox"></label>-->
 
                 <label for="code">Programación</label>
                 <input type="checkbox" id="code" value="code">
-
+                
                 <label for="sports">Deportes</label>
                 <input type="checkbox" id="sports" value="sports">
                 
+
                 <label for="music">Música</label>
                 <input type="checkbox" id="music" value="music">
+                                
             </fieldset>
     
             <button type="button" id="create_profile">Crear Perfil</button>
@@ -74,7 +59,7 @@
         <div id="profile_preview"></div>
     </main>
     <footer>
-        <h3>Prometeo DAW 2024 ®</h3>
+        <h3>Prometeo DAW 2025 ®</h3>
     </footer>
 </body>
 </html>
