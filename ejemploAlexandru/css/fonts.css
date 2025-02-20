@@ -1,0 +1,61 @@
+@font-face {
+    font-family: '8bit';
+    src: url(../fonts/8bit/8-bit-webfont.eot);
+    src: url('../fonts/8bit/8-bit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/8bit/8-bit-webfont.woff2') format('woff2'),
+         url('../fonts/8bit/8-bit-webfont.woff') format('woff'),
+         url('../fonts/8bit/8-bit-webfont.ttf') format('truetype'),
+         url('../fonts/8bit/8-bit-webfont.svg#8bit_wondernominal') format('svg');	 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+		font-family: 'gputeks';
+		src: url(../fonts/gputeks/8-bit-webfont.eot);
+		src: url('../fonts/gputeks/gputeks-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gputeks/gputeks-regular-webfont.woff2') format('woff2'),
+         url('../fonts/gputeks/gputeks-regular-webfont.woff') format('woff'),
+         url('../fonts/gputeks/gputeks-regular-webfont.ttf') format('truetype'),
+         url('../fonts/gputeks/gputeks-regular-webfont.svg#gputeks_wondernominal') format('svg');	
+		font-weight: normal;
+		font-style: normal;		 
+	
+}
+
+@font-face {
+    font-family: 'yorkwhiteletterregular';
+    src: url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.eot');
+    src: url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.woff2') format('woff2'),
+         url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.woff') format('woff'),
+         url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.ttf') format('truetype'),
+         url('../fonts/yorkwhiteletter/yorkwhiteletter-webfont.svg#yorkwhiteletterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'market';
+    src: url('../fonts/market/market_deco-webfont.eot');
+    src: url('../fonts/market/market_deco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/market/market_deco-webfont.woff2') format('woff2'),
+         url('../fonts/market/market_deco-webfont.woff') format('woff'),
+         url('../fonts/market/market_deco-webfont.ttf') format('truetype'),
+         url('../fonts/market/market_deco-webfont.svg#market_decoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sciencefair';
+    src: url('../fonts/sciencefair/science_fair-webfont.eot');
+    src: url('../fonts/sciencefair/science_fair-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sciencefair/science_fair-webfont.woff2') format('woff2'),
+         url('../fonts/sciencefair/science_fair-webfont.woff') format('woff'),
+         url('../fonts/sciencefair/science_fair-webfont.ttf') format('truetype'),
+         url('../fonts/sciencefair/science_fair-webfont.svg#science_fairregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

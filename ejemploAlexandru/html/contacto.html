@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Contacto</title>        
+        <meta content="Alexandru Cristian Cucuruzeanu" name="author" />        
+		<!--icono del título-->
+		<link rel="shortcut icon" href="imgs/favicon.ico">
+        <!-------hoja de estilos css ---------->		
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+		<link rel="stylesheet" href="css/menu.css" type="text/css" />
+		<link rel="stylesheet" href="css/form.css" type="text/css" />
+		<!------- plugin para que se vea en IE ---------->
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+    <body>		
+		<section class="sitio">			
+			<header>
+				<nav id="menu">						
+					<a href="index.html"><img src="imgs/invader.png"></img>WePlayGames</a>
+					<ul>
+						<li><a href="videos.html">Videos</a></li>
+						<li><a href="sobre.html">Sobre nosotros</a></li>
+						<li><a href="contacto.html">Contacto</a></li>												
+						<li><a href="#">Comunidad</a>
+							<ul>
+								<li><a href="#">Discusiones</a></li>
+								<li><a href="#">Mercado</a></li>
+								<li><a href="#">Eventos</a></li>
+							</ul>
+						</li>						
+						
+					</ul>
+				</nav>			
+			</header>
+			<section class="contenidoprincipal">				
+				<form class="contact_form" action="#" method="post">
+					<ul>
+						<li>
+							<label for="name">Nombre:</label>
+							<input type="text"  placeholder="Neo Smith" required />
+						</li>
+						<li>
+							<label for="email">Email:</label>
+							<input type="email" name="email" placeholder="nsmith@ejemplo.com" required />
+						</li>
+						<li>
+							<label for="website">Sitio Web:</label>
+							<input type="url" name="web" placeholder="http://www.weplaygames.com"/>
+						</li>
+						<li>
+							<label for="Mensaje">Mensaje:</label>
+							<textarea name="Mensaje" cols="40" rows="6" required></textarea>
+						</li>
+						<li>
+							<button class="submit" type="submit">Enviar</button>
+						</li>
+					</ul>
+				</form>	
+			</section>
+			<div class=" separador"></div>			
+			<footer>
+				<p>Copyright © 2016 · Alexandru. All Rights Reserved. WePlayGames - Tus cuñaos en videojuegos</p>
+			</footer>
+		</section>
+	</body>
+</html>
