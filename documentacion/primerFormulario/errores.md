@@ -55,14 +55,30 @@ En el campo nombre no se establece una limitación de caracteres de manera que e
 
 ### 3.2. Reproducción: 
 
-Si rellenas el nombre y el email con cualquier tipo de caracteres (por ejemplo, números) el formulario se envía.
+Si rellenas el campo nombre con cualquier tipo de caracteres (por ejemplo, números o caracteres especiales) el formulario igualmente se envía.
 
 ### 3.3. Comportamiento esperado: 
 
-Para recibir un formulario, debe ser necesario que en el campo email el usuario introduzca una dirección de correo electrónico, que se caracteriza por la inclusión del caracter @ (más el servicio de correo electrónico que tenga el usuario).
+Para recibir un formulario, debe ser necesario que el campo nombre permita solamente que el usuario introduzca letras, pues normalmente los nombres de personas no incluyen números ni caracteres especiales.
 
 ### 3.4. Qué se obtiene en su lugar.
 
-Imagen del resultado: ![alt text]({80EC6946-8F06-41D0-B1A8-DDF9D822339E}.png)
+Imagen del resultado: ![alt text]({2C3463C3-7D56-4BB2-942E-77F458B1ADCC}.png)
 
 4. 
+
+### 4.1. Descripción del problema: 
+
+En el campo mensaje no se establece una limitación de tamaño de recuadro de forma que es posible hacerlo más grande que el cuadro del formulario.
+
+### 4.2. Reproducción: 
+
+Si pasas el ratón sobre la esquina inferior derecha del recuadro de mensaje, se permite aumentar el tamaño del recuadro sin ningún tipo de limitación.
+
+### 4.3. Comportamiento esperado: 
+
+Este recuadro bien debería tener un tamaño fijo o bien que se pueda desplazar únicamente hacia abajo.
+
+### 4.4. Qué se obtiene en su lugar.
+
+Imagen del resultado: ![alt text]({845315D3-862F-49CF-BC1D-F39901D28345}.png)
