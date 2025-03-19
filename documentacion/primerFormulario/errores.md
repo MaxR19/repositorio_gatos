@@ -51,7 +51,18 @@ Imagen del resultado: ![alt text]({80EC6946-8F06-41D0-B1A8-DDF9D822339E}.png)
 
 ### 3.1. Descripción del problema: 
 
-
 En el campo nombre no se establece una limitación de caracteres de manera que el usuario puede introducir números y caracteres especiales.
+
+### 3.2. Reproducción: 
+
+Si rellenas el nombre y el email con cualquier tipo de caracteres (por ejemplo, números) el formulario se envía.
+
+### 3.3. Comportamiento esperado: 
+
+Para recibir un formulario, debe ser necesario que en el campo email el usuario introduzca una dirección de correo electrónico, que se caracteriza por la inclusión del caracter @ (más el servicio de correo electrónico que tenga el usuario).
+
+### 3.4. Qué se obtiene en su lugar.
+
+Imagen del resultado: ![alt text]({80EC6946-8F06-41D0-B1A8-DDF9D822339E}.png)
 
 4. 
